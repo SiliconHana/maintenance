@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    padding-top: 0.75em;
+    padding-left: 0.8em;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.background-image {
+    width: 100%;
+    height: 50em;
+    object-fit: contain;
+    opacity: 10%;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error-title {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.error-message {
+    font-size: 1.2em;
+    color: #3CEFFC;
+}
+
+@media only screen and (max-width: 700px) {
+    .error-title {
+        font-size: 2em;
+    }
+    .error-message {
+        font-size: 1em;
+    }
+    .background-image {
+        height: 45em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .error-title {
+        font-size: 1.5em;
+    }
+    .error-message {
+        font-size: 1em;
+    }
+    .background-image {
+        height: 45em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .error-title {
+        font-size: 1.2em;
+    }
+    .error-message {
+        font-size: 1em;
+    }
+    .background-image {
+        height: 45em;
+    }
+}
